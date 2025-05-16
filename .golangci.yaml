@@ -1,0 +1,112 @@
+version: "2"
+linters:
+  enable:
+    - asciicheck
+    - bodyclose
+    - copyloopvar
+    - depguard
+    - dogsled
+    - dupl
+    - err113
+    - errorlint
+    - exhaustive
+    - funlen
+    - gochecknoglobals
+    - gochecknoinits
+    - gocognit
+    - goconst
+    - gocritic
+    - gocyclo
+    - godot
+    - godox
+    - goheader
+    - gomodguard
+    - goprintffuncname
+    - gosec
+    - lll
+    - misspell
+    - mnd
+    - nakedret
+    - nestif
+    - nlreturn
+    - noctx
+    - nolintlint
+    - paralleltest
+    - prealloc
+    - revive
+    - rowserrcheck
+    - sqlclosecheck
+    - staticcheck
+    - testpackage
+    - tparallel
+    - unconvert
+    - unparam
+    - whitespace
+    - wsl
+  settings:
+    depguard:
+      rules:
+        Main:
+          files:
+            - $all
+            - '!$test'
+          allow:
+            - $gostd
+            - github.com/becoded/go-harvest
+            - github.com/google/go-querystring
+            - github.com/sirupsen/logrus
+            - golang.org/x/oauth2
+        Test:
+          files:
+            - $test
+          allow:
+            - $gostd
+            - github.com/becoded/go-harvest
+            - github.com/google/go-querystring
+            - github.com/stretchr/testify
+    wsl:
+      allow-cuddle-declarations: true
+  exclusions:
+    generated: lax
+    presets:
+      - comments
+      - common-false-positives
+      - legacy
+      - std-error-handling
+    rules:
+      - linters:
+          - bodyclose
+          - dupl
+          - err113
+          - funlen
+        path: _test\.go
+      - linters:
+          - lll
+        source: '^//go:generate '
+      - path: (.+)\.go$
+        text: 'shadow: declaration of "err" shadows declaration at line'
+    paths:
+      - third_party$
+      - builtin$
+      - examples$
+formatters:
+  enable:
+    - gci
+    - gofmt
+    - gofumpt
+    - goimports
+  settings:
+    gci:
+      sections:
+        - standard
+        - default
+        - prefix(github.com/becoded/billit)
+    goimports:
+      local-prefixes:
+        - github.com/becoded/billit
+  exclusions:
+    generated: lax
+    paths:
+      - third_party$
+      - builtin$
+      - examples$
