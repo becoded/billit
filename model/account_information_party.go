@@ -50,7 +50,7 @@ type AccountInformationParty struct {
 
 	// book year start
 	// Format: date-time
-	BookYearStart strfmt.DateTime `json:"BookYearStart,omitempty"`
+	BookYearStart *strfmt.DateTime `json:"BookYearStart,omitempty"`
 
 	// box
 	Box string `json:"Box,omitempty"`
@@ -78,7 +78,7 @@ type AccountInformationParty struct {
 
 	// created
 	// Format: date-time
-	Created strfmt.DateTime `json:"Created,omitempty"`
+	Created *strfmt.DateTime `json:"Created,omitempty"`
 
 	// custom fields
 	CustomFields []*MutableKeyValuePairStringString `json:"CustomFields"`
@@ -145,7 +145,7 @@ type AccountInformationParty struct {
 
 	// last modified
 	// Format: date-time
-	LastModified strfmt.DateTime `json:"LastModified,omitempty"`
+	LastModified *strfmt.DateTime `json:"LastModified,omitempty"`
 
 	// logo file ID
 	// Example: 00000000-0000-0000-0000-000000000000

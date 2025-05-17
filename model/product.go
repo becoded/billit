@@ -34,7 +34,7 @@ type Product struct {
 
 	// created
 	// Format: date-time
-	Created strfmt.DateTime `json:"Created,omitempty"`
+	Created *strfmt.DateTime `json:"Created,omitempty"`
 
 	// description
 	Description string `json:"Description,omitempty"`
@@ -62,7 +62,7 @@ type Product struct {
 
 	// last modified
 	// Format: date-time
-	LastModified strfmt.DateTime `json:"LastModified,omitempty"`
+	LastModified *strfmt.DateTime `json:"LastModified,omitempty"`
 
 	// minimum billed quantity
 	MinimumBilledQuantity float64 `json:"MinimumBilledQuantity,omitempty"`

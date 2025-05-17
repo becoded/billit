@@ -21,7 +21,7 @@ type OrderMessage struct {
 
 	// creation date
 	// Format: date-time
-	CreationDate strfmt.DateTime `json:"CreationDate,omitempty"`
+	CreationDate *strfmt.DateTime `json:"CreationDate,omitempty"`
 
 	// description
 	Description string `json:"Description,omitempty"`

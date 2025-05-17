@@ -21,7 +21,7 @@ type TimezoneInfo struct {
 
 	// date time
 	// Format: date-time
-	DateTime strfmt.DateTime `json:"DateTime,omitempty"`
+	DateTime *strfmt.DateTime `json:"DateTime,omitempty"`
 
 	// time zone info
 	TimeZoneInfo string `json:"TimeZoneInfo,omitempty"`

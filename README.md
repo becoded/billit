@@ -4,6 +4,7 @@
 
 ## Swagger file
 https://api.billit.be/swagger/docs/v1
+It is required to do some changes to the Swagger file to be able to generate models that are actually working.
 
 ## Postman collection
 https://www.postman.com/billit/billit-quickstart-guide/request/aciw1ik/01-create-sales-invoice

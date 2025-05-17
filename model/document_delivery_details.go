@@ -21,7 +21,7 @@ type DocumentDeliveryDetails struct {
 
 	// document delivery date
 	// Format: date-time
-	DocumentDeliveryDate strfmt.DateTime `json:"DocumentDeliveryDate,omitempty"`
+	DocumentDeliveryDate *strfmt.DateTime `json:"DocumentDeliveryDate,omitempty"`
 
 	// document delivery info
 	DocumentDeliveryInfo string `json:"DocumentDeliveryInfo,omitempty"`
@@ -31,7 +31,7 @@ type DocumentDeliveryDetails struct {
 
 	// document refused date
 	// Format: date-time
-	DocumentRefusedDate strfmt.DateTime `json:"DocumentRefusedDate,omitempty"`
+	DocumentRefusedDate *strfmt.DateTime `json:"DocumentRefusedDate,omitempty"`
 
 	// document refused info
 	DocumentRefusedInfo string `json:"DocumentRefusedInfo,omitempty"`

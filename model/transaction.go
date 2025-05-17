@@ -96,7 +96,7 @@ type Transaction struct {
 
 	// value date
 	// Format: date-time
-	ValueDate strfmt.DateTime `json:"ValueDate,omitempty"`
+	ValueDate *strfmt.DateTime `json:"ValueDate,omitempty"`
 }
 
 // Validate validates this transaction

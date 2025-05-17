@@ -45,7 +45,7 @@ type CompanySearchResultItem struct {
 
 	// start date
 	// Format: date-time
-	StartDate strfmt.DateTime `json:"StartDate,omitempty"`
+	StartDate *strfmt.DateTime `json:"StartDate,omitempty"`
 
 	// street
 	Street string `json:"Street,omitempty"`

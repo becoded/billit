@@ -27,7 +27,7 @@ type Cashbook struct {
 
 	// from date
 	// Format: date-time
-	FromDate strfmt.DateTime `json:"FromDate,omitempty"`
+	FromDate *strfmt.DateTime `json:"FromDate,omitempty"`
 }
 
 // Validate validates this cashbook

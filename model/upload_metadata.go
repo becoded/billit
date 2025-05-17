@@ -30,7 +30,7 @@ type UploadMetadata struct {
 
 	// order date
 	// Format: date-time
-	OrderDate strfmt.DateTime `json:"OrderDate,omitempty"`
+	OrderDate *strfmt.DateTime `json:"OrderDate,omitempty"`
 
 	// payment method
 	PaymentMethod string `json:"PaymentMethod,omitempty"`

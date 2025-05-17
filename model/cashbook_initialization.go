@@ -24,7 +24,7 @@ type CashbookInitialization struct {
 
 	// start date
 	// Format: date-time
-	StartDate strfmt.DateTime `json:"StartDate,omitempty"`
+	StartDate *strfmt.DateTime `json:"StartDate,omitempty"`
 }
 
 // Validate validates this cashbook initialization
