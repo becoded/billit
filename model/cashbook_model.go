@@ -24,14 +24,14 @@ type CashbookModel struct {
 
 	// creation date
 	// Format: date-time
-	CreationDate strfmt.DateTime `json:"CreationDate,omitempty"`
+	CreationDate *strfmt.DateTime `json:"CreationDate,omitempty"`
 
 	// currency
 	Currency string `json:"Currency,omitempty"`
 
 	// last entry date
 	// Format: date-time
-	LastEntryDate strfmt.DateTime `json:"LastEntryDate,omitempty"`
+	LastEntryDate *strfmt.DateTime `json:"LastEntryDate,omitempty"`
 
 	// name
 	Name string `json:"Name,omitempty"`

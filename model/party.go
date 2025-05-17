@@ -44,7 +44,7 @@ type Party struct {
 
 	// book year start
 	// Format: date-time
-	BookYearStart strfmt.DateTime `json:"BookYearStart,omitempty"`
+	BookYearStart *strfmt.DateTime `json:"BookYearStart,omitempty"`
 
 	// box
 	Box string `json:"Box,omitempty"`
@@ -72,7 +72,7 @@ type Party struct {
 
 	// created
 	// Format: date-time
-	Created strfmt.DateTime `json:"Created,omitempty"`
+	Created *strfmt.DateTime `json:"Created,omitempty"`
 
 	// custom fields
 	CustomFields []*MutableKeyValuePairStringString `json:"CustomFields"`
@@ -139,7 +139,7 @@ type Party struct {
 
 	// last modified
 	// Format: date-time
-	LastModified strfmt.DateTime `json:"LastModified,omitempty"`
+	LastModified *strfmt.DateTime `json:"LastModified,omitempty"`
 
 	// mobile
 	Mobile string `json:"Mobile,omitempty"`

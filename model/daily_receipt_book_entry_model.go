@@ -24,7 +24,7 @@ type DailyReceiptBookEntryModel struct {
 
 	// input date
 	// Format: date-time
-	InputDate strfmt.DateTime `json:"InputDate,omitempty"`
+	InputDate *strfmt.DateTime `json:"InputDate,omitempty"`
 
 	// total incl
 	TotalIncl float64 `json:"TotalIncl,omitempty"`

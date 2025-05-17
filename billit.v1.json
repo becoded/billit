@@ -3160,7 +3160,8 @@
         },
         "BookYearStart": {
           "format": "date-time",
-          "type": "string"
+          "type": "string",
+          "x-nullable": true
         },
         "Nr": {
           "type": "string"
@@ -3243,11 +3244,13 @@
         },
         "LastModified": {
           "format": "date-time",
-          "type": "string"
+          "type": "string",
+          "x-nullable": true
         },
         "Created": {
           "format": "date-time",
-          "type": "string"
+          "type": "string",
+          "x-nullable": true
         },
         "PartyType": {
           "enum": [
@@ -3575,7 +3578,8 @@
         },
         "BookYearStart": {
           "format": "date-time",
-          "type": "string"
+          "type": "string",
+          "x-nullable": true
         },
         "Nr": {
           "type": "string"
@@ -3658,11 +3662,13 @@
         },
         "LastModified": {
           "format": "date-time",
-          "type": "string"
+          "type": "string",
+          "x-nullable": true
         },
         "Created": {
           "format": "date-time",
-          "type": "string"
+          "type": "string",
+          "x-nullable": true
         },
         "PartyType": {
           "enum": [
@@ -3983,7 +3989,8 @@
       "properties": {
         "StartDate": {
           "format": "date-time",
-          "type": "string"
+          "type": "string",
+          "x-nullable": true
         },
         "StartBalance": {
           "format": "double",
@@ -4003,7 +4010,8 @@
         },
         "CreationDate": {
           "format": "date-time",
-          "type": "string"
+          "type": "string",
+          "x-nullable": true
         },
         "Saldo": {
           "format": "double",
@@ -4011,7 +4019,8 @@
         },
         "LastEntryDate": {
           "format": "date-time",
-          "type": "string"
+          "type": "string",
+          "x-nullable": true
         },
         "Currency": {
           "type": "string"
@@ -4586,7 +4595,8 @@
       "properties": {
         "TransactionDate": {
           "format": "date-time",
-          "type": "string"
+          "type": "string",
+          "x-nullable": true
         },
         "EntryType": {
           "type": "string"
@@ -4622,7 +4632,8 @@
         },
         "InputDate": {
           "format": "date-time",
-          "type": "string"
+          "type": "string",
+          "x-nullable": true
         },
         "VentilationCodeTC": {
           "type": "string"
@@ -4704,7 +4715,8 @@
         },
         "FromDate": {
           "format": "date-time",
-          "type": "string"
+          "type": "string",
+          "x-nullable": true
         },
         "Closed": {
           "type": "boolean"
@@ -4733,11 +4745,13 @@
         },
         "DocumentDate": {
           "format": "date-time",
-          "type": "string"
+          "type": "string",
+          "x-nullable": true
         },
         "CreationDate": {
           "format": "date-time",
-          "type": "string"
+          "type": "string",
+          "x-nullable": true
         },
         "Tags": {
           "type": "array",
@@ -4859,11 +4873,13 @@
         },
         "DocumentDate": {
           "format": "date-time",
-          "type": "string"
+          "type": "string",
+          "x-nullable": true
         },
         "CreationDate": {
           "format": "date-time",
-          "type": "string"
+          "type": "string",
+          "x-nullable": true
         },
         "Tags": {
           "type": "array",
@@ -5065,22 +5081,26 @@
         },
         "OrderDate": {
           "format": "date-time",
-          "type": "string"
+          "type": "string",
+          "x-nullable": true
         },
         "ExpiryDate": {
           "format": "date-time",
-          "type": "string"
+          "type": "string",
+          "x-nullable": true
         },
         "OrderType": {
           "type": "string"
         },
         "LastModified": {
           "format": "date-time",
-          "type": "string"
+          "type": "string",
+          "x-nullable": true
         },
         "Created": {
           "format": "date-time",
-          "type": "string"
+          "type": "string",
+          "x-nullable": true
         },
         "OrderDirection": {
           "type": "string"
@@ -5117,7 +5137,8 @@
         },
         "PaymentDiscountDate": {
           "format": "date-time",
-          "type": "string"
+          "type": "string",
+          "x-nullable": true
         },
         "VatGroups": {
           "type": "array",
@@ -5173,7 +5194,8 @@
         },
         "PaidDate": {
           "format": "date-time",
-          "type": "string"
+          "type": "string",
+          "x-nullable": true
         },
         "ExternalProviderID": {
           "type": "string"
@@ -5225,11 +5247,13 @@
         },
         "PeriodFrom": {
           "format": "date-time",
-          "type": "string"
+          "type": "string",
+          "x-nullable": true
         },
         "PeriodTill": {
           "format": "date-time",
-          "type": "string"
+          "type": "string",
+          "x-nullable": true
         },
         "CostCategoryCode": {
           "format": "int32",
@@ -5244,7 +5268,8 @@
         },
         "LastReminder": {
           "format": "date-time",
-          "type": "string"
+          "type": "string",
+          "x-nullable": true
         },
         "RemindersSent": {
           "format": "int32",
@@ -5276,7 +5301,8 @@
         },
         "DeliveryDate": {
           "format": "date-time",
-          "type": "string"
+          "type": "string",
+          "x-nullable": true
         },
         "ExportedToConnector": {
           "type": "boolean"
@@ -5330,7 +5356,8 @@
         },
         "TaxPointDate": {
           "format": "date-time",
-          "type": "string"
+          "type": "string",
+          "x-nullable": true
         },
         "CategoryFieldItems": {
           "type": "array",
@@ -5543,11 +5570,13 @@
       "properties": {
         "DocumentRefusedDate": {
           "format": "date-time",
-          "type": "string"
+          "type": "string",
+          "x-nullable": true
         },
         "DocumentDeliveryDate": {
           "format": "date-time",
-          "type": "string"
+          "type": "string",
+          "x-nullable": true
         },
         "DocumentDeliveryInfo": {
           "type": "string"
@@ -5583,7 +5612,8 @@
         },
         "CreationDate": {
           "format": "date-time",
-          "type": "string"
+          "type": "string",
+          "x-nullable": true
         },
         "TransportType": {
           "type": "string"
@@ -5709,7 +5739,8 @@
         },
         "DateTime": {
           "format": "date-time",
-          "type": "string"
+          "type": "string",
+          "x-nullable": true
         }
       }
     },
@@ -5854,7 +5885,8 @@
         },
         "ValueDate": {
           "format": "date-time",
-          "type": "string"
+          "type": "string",
+          "x-nullable": true
         },
         "Currency": {
           "type": "string"
@@ -6069,7 +6101,8 @@
         },
         "StartDate": {
           "format": "date-time",
-          "type": "string"
+          "type": "string",
+          "x-nullable": true
         },
         "CommercialName": {
           "type": "string"
@@ -6136,7 +6169,8 @@
         },
         "Date": {
           "format": "date-time",
-          "type": "string"
+          "type": "string",
+          "x-nullable": true
         }
       }
     },
@@ -6279,7 +6313,8 @@
         },
         "CreationDate": {
           "format": "date-time",
-          "type": "string"
+          "type": "string",
+          "x-nullable": true
         },
         "PeppolFileID": {
           "format": "uuid",
@@ -6462,11 +6497,13 @@
         },
         "Created": {
           "format": "date-time",
-          "type": "string"
+          "type": "string",
+          "x-nullable": true
         },
         "LastModified": {
           "format": "date-time",
-          "type": "string"
+          "type": "string",
+          "x-nullable": true
         },
         "EAN": {
           "type": "string"
@@ -6627,7 +6664,8 @@
         },
         "OrderDate": {
           "format": "date-time",
-          "type": "string"
+          "type": "string",
+          "x-nullable": true
         }
       }
     }

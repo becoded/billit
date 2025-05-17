@@ -73,7 +73,7 @@ type Order struct {
 
 	// created
 	// Format: date-time
-	Created strfmt.DateTime `json:"Created,omitempty"`
+	Created *strfmt.DateTime `json:"Created,omitempty"`
 
 	// currency
 	Currency string `json:"Currency,omitempty"`
@@ -95,14 +95,14 @@ type Order struct {
 
 	// delivery date
 	// Format: date-time
-	DeliveryDate strfmt.DateTime `json:"DeliveryDate,omitempty"`
+	DeliveryDate *strfmt.DateTime `json:"DeliveryDate,omitempty"`
 
 	// department ID
 	DepartmentID int32 `json:"DepartmentID,omitempty"`
 
 	// expiry date
 	// Format: date-time
-	ExpiryDate strfmt.DateTime `json:"ExpiryDate,omitempty"`
+	ExpiryDate *strfmt.DateTime `json:"ExpiryDate,omitempty"`
 
 	// exported to connector
 	ExportedToConnector bool `json:"ExportedToConnector,omitempty"`
@@ -133,11 +133,11 @@ type Order struct {
 
 	// last modified
 	// Format: date-time
-	LastModified strfmt.DateTime `json:"LastModified,omitempty"`
+	LastModified *strfmt.DateTime `json:"LastModified,omitempty"`
 
 	// last reminder
 	// Format: date-time
-	LastReminder strfmt.DateTime `json:"LastReminder,omitempty"`
+	LastReminder *strfmt.DateTime `json:"LastReminder,omitempty"`
 
 	// message template ID
 	MessageTemplateID int32 `json:"MessageTemplateID,omitempty"`
@@ -156,7 +156,7 @@ type Order struct {
 
 	// order date
 	// Format: date-time
-	OrderDate strfmt.DateTime `json:"OrderDate,omitempty"`
+	OrderDate *strfmt.DateTime `json:"OrderDate,omitempty"`
 
 	// order direction
 	OrderDirection string `json:"OrderDirection,omitempty"`
@@ -190,14 +190,14 @@ type Order struct {
 
 	// paid date
 	// Format: date-time
-	PaidDate strfmt.DateTime `json:"PaidDate,omitempty"`
+	PaidDate *strfmt.DateTime `json:"PaidDate,omitempty"`
 
 	// payment discount amount
 	PaymentDiscountAmount float64 `json:"PaymentDiscountAmount,omitempty"`
 
 	// payment discount date
 	// Format: date-time
-	PaymentDiscountDate strfmt.DateTime `json:"PaymentDiscountDate,omitempty"`
+	PaymentDiscountDate *strfmt.DateTime `json:"PaymentDiscountDate,omitempty"`
 
 	// payment discount percentage
 	PaymentDiscountPercentage float64 `json:"PaymentDiscountPercentage,omitempty"`
@@ -219,11 +219,11 @@ type Order struct {
 
 	// period from
 	// Format: date-time
-	PeriodFrom strfmt.DateTime `json:"PeriodFrom,omitempty"`
+	PeriodFrom *strfmt.DateTime `json:"PeriodFrom,omitempty"`
 
 	// period till
 	// Format: date-time
-	PeriodTill strfmt.DateTime `json:"PeriodTill,omitempty"`
+	PeriodTill *strfmt.DateTime `json:"PeriodTill,omitempty"`
 
 	// project ID
 	ProjectID int32 `json:"ProjectID,omitempty"`
@@ -251,7 +251,7 @@ type Order struct {
 
 	// tax point date
 	// Format: date-time
-	TaxPointDate strfmt.DateTime `json:"TaxPointDate,omitempty"`
+	TaxPointDate *strfmt.DateTime `json:"TaxPointDate,omitempty"`
 
 	// template ID
 	TemplateID int32 `json:"TemplateID,omitempty"`

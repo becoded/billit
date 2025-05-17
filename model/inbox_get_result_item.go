@@ -21,7 +21,7 @@ type InboxGetResultItem struct {
 
 	// creation date
 	// Format: date-time
-	CreationDate strfmt.DateTime `json:"CreationDate,omitempty"`
+	CreationDate *strfmt.DateTime `json:"CreationDate,omitempty"`
 
 	// inbox item ID
 	InboxItemID int32 `json:"InboxItemID,omitempty"`

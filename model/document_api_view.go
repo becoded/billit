@@ -24,14 +24,14 @@ type DocumentAPIView struct {
 
 	// creation date
 	// Format: date-time
-	CreationDate strfmt.DateTime `json:"CreationDate,omitempty"`
+	CreationDate *strfmt.DateTime `json:"CreationDate,omitempty"`
 
 	// description
 	Description string `json:"Description,omitempty"`
 
 	// document date
 	// Format: date-time
-	DocumentDate strfmt.DateTime `json:"DocumentDate,omitempty"`
+	DocumentDate *strfmt.DateTime `json:"DocumentDate,omitempty"`
 
 	// document ID
 	DocumentID int32 `json:"DocumentID,omitempty"`
