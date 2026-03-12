@@ -8,7 +8,7 @@ require (
 	github.com/go-openapi/strfmt v0.25.0
 	github.com/go-openapi/swag v0.25.4
 	github.com/go-openapi/validate v0.25.1
-	github.com/magefile/mage v1.15.0
+	github.com/magefile/mage v1.16.1
 	golang.org/x/tools v0.41.0
 )
 
